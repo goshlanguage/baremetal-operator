@@ -1,4 +1,4 @@
-module github.com/metal3-io/baremetal-operator/pkg/hardwareutils
+module github.com/goshlanguage/baremetal-operator/pkg/hardwareutils
 
 go 1.17
 
