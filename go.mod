@@ -1,4 +1,4 @@
-module github.com/metal3-io/baremetal-operator
+module github.com/goshlanguage/baremetal-operator
 
 go 1.17
 
@@ -69,6 +69,6 @@ require (
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.1 // indirect
 )
 
-replace github.com/metal3-io/baremetal-operator/apis => ./apis
+replace github.com/goshlanguage/baremetal-operator/apis => ./apis
 
-replace github.com/metal3-io/baremetal-operator/pkg/hardwareutils => ./pkg/hardwareutils
+replace github.com/goshlanguage/baremetal-operator/pkg/hardwareutils => ./pkg/hardwareutils
