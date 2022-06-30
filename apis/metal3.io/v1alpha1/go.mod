@@ -1,4 +1,4 @@
-module github.com/goshlanguage/baremetal-operator/apis
+module github.com/goshlanguage/baremetal-operator/apis/metal3.io/v1alpha1
 
 go 1.17
 
