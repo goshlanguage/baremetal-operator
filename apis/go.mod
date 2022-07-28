@@ -1,10 +1,10 @@
-module github.com/metal3-io/baremetal-operator/apis
+module github.com/goshlanguage/baremetal-operator/apis
 
 go 1.17
 
 require (
 	github.com/google/uuid v1.1.2
-	github.com/metal3-io/baremetal-operator/pkg/hardwareutils v0.0.0
+	github.com/goshlanguage/baremetal-operator/pkg/hardwareutils v0.1.0
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.7.0
 	k8s.io/api v0.23.5
@@ -58,5 +58,3 @@ require (
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.1 // indirect
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
-
-replace github.com/metal3-io/baremetal-operator/pkg/hardwareutils => ./../pkg/hardwareutils

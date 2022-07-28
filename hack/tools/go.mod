@@ -1,4 +1,4 @@
-module github.com/metal3-io/baremetal-operator/tooling
+module github.com/goshlanguage/baremetal-operator/tooling
 
 go 1.17
 

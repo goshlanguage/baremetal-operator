@@ -5,8 +5,8 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/types"
 
-	metal3v1alpha1 "github.com/metal3-io/baremetal-operator/apis/metal3.io/v1alpha1"
-	"github.com/metal3-io/baremetal-operator/pkg/secretutils"
+	metal3v1alpha1 "github.com/goshlanguage/baremetal-operator/apis/metal3.io/v1alpha1"
+	"github.com/goshlanguage/baremetal-operator/pkg/secretutils"
 )
 
 // hostConfigData is an implementation of host configuration data interface.

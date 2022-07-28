@@ -8,7 +8,7 @@ import (
 	"github.com/google/uuid"
 	logf "sigs.k8s.io/controller-runtime/pkg/log"
 
-	"github.com/metal3-io/baremetal-operator/pkg/hardwareutils/bmc"
+	"github.com/goshlanguage/baremetal-operator/pkg/hardwareutils/bmc"
 )
 
 // log is for logging in this package.

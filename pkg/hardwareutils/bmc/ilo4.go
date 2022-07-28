@@ -46,7 +46,7 @@ func (a *iLOAccessDetails) Type() string {
 // port created rather than having it discovered.
 func (a *iLOAccessDetails) NeedsMAC() bool {
 	// For the inspection to work, we need a MAC address
-	// https://github.com/metal3-io/baremetal-operator/pull/284#discussion_r317579040
+	// https://github.com/goshlanguage/baremetal-operator/pull/284#discussion_r317579040
 	return true
 }
 

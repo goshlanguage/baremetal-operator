@@ -52,7 +52,7 @@ of ``podman``. This you can edit to ``docker`` as well.
     operator. Otherwise, you'll see the following error
 
     ```bash
-    sh: 0: Can't open /go/src/github.com/metal3-io/baremetal-operator/hack/golint.sh
+    sh: 0: Can't open /go/src/github.com/goshlanguage/baremetal-operator/hack/golint.sh
     ```
 
 3. Upon successful execution, you should see the following output. I already
@@ -63,9 +63,9 @@ of ``podman``. This you can edit to ``docker`` as well.
     + IS_CONTAINER=false
     + CONTAINER_RUNTIME=docker
     + [ false != false ]
-    + docker run --rm --env IS_CONTAINER=TRUE --volume /home/noor/go/src/github.com/metal3-io/baremetal-operator:/go/src/github.com/metal3-io/baremetal-operator:ro,z\
-    --entrypoint sh --workdir /go/src/github.com/metal3-io/baremetal-operator\
-    quay.io/metal3-io/golint:latest /go/src/github.com/metal3-io/baremetal-operator/hack/golint.sh
+    + docker run --rm --env IS_CONTAINER=TRUE --volume /home/noor/go/src/github.com/goshlanguage/baremetal-operator:/go/src/github.com/goshlanguage/baremetal-operator:ro,z\
+    --entrypoint sh --workdir /go/src/github.com/goshlanguage/baremetal-operator\
+    quay.io/metal3-io/golint:latest /go/src/github.com/goshlanguage/baremetal-operator/hack/golint.sh
     + IS_CONTAINER=TRUE
     + CONTAINER_RUNTIME=podman
     + [ TRUE != false ]

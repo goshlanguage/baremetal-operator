@@ -1,12 +1,12 @@
-module github.com/metal3-io/baremetal-operator
+module github.com/goshlanguage/baremetal-operator
 
 go 1.17
 
 require (
 	github.com/go-logr/logr v1.2.0
 	github.com/gophercloud/gophercloud v0.22.0
-	github.com/metal3-io/baremetal-operator/apis v0.0.0
-	github.com/metal3-io/baremetal-operator/pkg/hardwareutils v0.0.0
+	github.com/goshlanguage/baremetal-operator/apis v0.0.0
+	github.com/goshlanguage/baremetal-operator/pkg/hardwareutils v0.0.0
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.11.0
 	github.com/stretchr/testify v1.7.0
@@ -69,6 +69,6 @@ require (
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.1 // indirect
 )
 
-replace github.com/metal3-io/baremetal-operator/apis => ./apis
+replace github.com/goshlanguage/baremetal-operator/apis => ./apis
 
-replace github.com/metal3-io/baremetal-operator/pkg/hardwareutils => ./pkg/hardwareutils
+replace github.com/goshlanguage/baremetal-operator/pkg/hardwareutils => ./pkg/hardwareutils

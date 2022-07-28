@@ -40,9 +40,9 @@ if [ "${IS_CONTAINER}" != "false" ]; then
 else
   "${CONTAINER_RUNTIME}" run --rm \
     --env IS_CONTAINER=TRUE \
-    --volume "${PWD}:/go/src/github.com/metal3-io/baremetal-operator:rw,z" \
+    --volume "${PWD}:/go/src/github.com/goshlanguage/baremetal-operator:rw,z" \
     --entrypoint sh \
-    --workdir /go/src/github.com/metal3-io/baremetal-operator \
+    --workdir /go/src/github.com/goshlanguage/baremetal-operator \
     registry.hub.docker.com/library/golang:1.17 \
-    /go/src/github.com/metal3-io/baremetal-operator/hack/gomod.sh "${@}"
+    /go/src/github.com/goshlanguage/baremetal-operator/hack/gomod.sh "${@}"
 fi;

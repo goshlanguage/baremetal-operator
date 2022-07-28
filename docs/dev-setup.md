@@ -36,7 +36,7 @@
     eval $(go env)
     mkdir -p $GOPATH/src/github.com/metal3-io
     cd $GOPATH/src/github.com/metal3-io
-    git clone https://github.com/metal3-io/baremetal-operator.git
+    git clone https://github.com/goshlanguage/baremetal-operator.git
     cd baremetal-operator
     kustomize build config/default | kubectl apply -f -
     ```

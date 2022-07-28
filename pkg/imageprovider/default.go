@@ -6,7 +6,7 @@ import (
 
 	"github.com/go-logr/logr"
 
-	metal3 "github.com/metal3-io/baremetal-operator/apis/metal3.io/v1alpha1"
+	metal3 "github.com/goshlanguage/baremetal-operator/apis/metal3.io/v1alpha1"
 )
 
 type envImageProvider struct {
