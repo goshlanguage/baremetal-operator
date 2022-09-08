@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/google/uuid v1.1.2
-	github.com/goshlanguage/baremetal-operator/pkg/hardwareutils v0.1.0
+	github.com/goshlanguage/baremetal-operator/pkg/hardwareutils v1.1.3
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.7.0
 	k8s.io/api v0.23.5
