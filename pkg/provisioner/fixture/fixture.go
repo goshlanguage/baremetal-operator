@@ -6,9 +6,9 @@ import (
 	"github.com/go-logr/logr"
 	logz "sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	metal3v1alpha1 "github.com/metal3-io/baremetal-operator/apis/metal3.io/v1alpha1"
-	"github.com/metal3-io/baremetal-operator/pkg/hardwareutils/bmc"
-	"github.com/metal3-io/baremetal-operator/pkg/provisioner"
+	metal3v1alpha1 "github.com/goshlanguage/baremetal-operator/apis/metal3.io/v1alpha1"
+	"github.com/goshlanguage/baremetal-operator/pkg/hardwareutils/bmc"
+	"github.com/goshlanguage/baremetal-operator/pkg/provisioner"
 )
 
 var log = logz.New().WithName("provisioner").WithName("fixture")

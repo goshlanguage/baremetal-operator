@@ -10,15 +10,15 @@ import (
 	"github.com/stretchr/testify/assert"
 	"k8s.io/apimachinery/pkg/util/intstr"
 
-	"github.com/metal3-io/baremetal-operator/apis/metal3.io/v1alpha1"
-	"github.com/metal3-io/baremetal-operator/pkg/hardwareutils/bmc"
-	"github.com/metal3-io/baremetal-operator/pkg/provisioner"
-	"github.com/metal3-io/baremetal-operator/pkg/provisioner/fixture"
-	"github.com/metal3-io/baremetal-operator/pkg/provisioner/ironic/clients"
-	"github.com/metal3-io/baremetal-operator/pkg/provisioner/ironic/testbmc"
-	"github.com/metal3-io/baremetal-operator/pkg/provisioner/ironic/testserver"
+	"github.com/goshlanguage/baremetal-operator/apis/metal3.io/v1alpha1"
+	"github.com/goshlanguage/baremetal-operator/pkg/hardwareutils/bmc"
+	"github.com/goshlanguage/baremetal-operator/pkg/provisioner"
+	"github.com/goshlanguage/baremetal-operator/pkg/provisioner/fixture"
+	"github.com/goshlanguage/baremetal-operator/pkg/provisioner/ironic/clients"
+	"github.com/goshlanguage/baremetal-operator/pkg/provisioner/ironic/testbmc"
+	"github.com/goshlanguage/baremetal-operator/pkg/provisioner/ironic/testserver"
 
-	_ "github.com/metal3-io/baremetal-operator/pkg/hardwareutils/bmc"
+	_ "github.com/goshlanguage/baremetal-operator/pkg/hardwareutils/bmc"
 )
 
 func TestProvision(t *testing.T) {

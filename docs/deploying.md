@@ -203,7 +203,7 @@ useful as well. For example:
 
 1. Only BMO is deployed, in  a case when Ironic is already running, e.g. as part
    of Cluster API Provider Metal3
-   [(CAPM3)](https://github.com/metal3-io/cluster-api-provider-metal3) when
+   [(CAPM3)](https://github.com/goshlanguage/cluster-api-provider-metal3) when
    a successful pivoting state was met and ironic being deployed.
 
 2. BMO and Ironic are deployed together, in a case when CAPM3 is not used and

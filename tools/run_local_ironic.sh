@@ -242,14 +242,14 @@ fi
 # Start dnsmasq, http, mariadb, and ironic containers using same image
 
 # See this file for env vars you can set, like IP, DHCP_RANGE, INTERFACE
-# https://github.com/metal3-io/ironic-image/blob/main/scripts/rundnsmasq
+# https://github.com/goshlanguage/ironic-image/blob/main/scripts/rundnsmasq
 # shellcheck disable=SC2086
 sudo "${CONTAINER_RUNTIME}" run -d --net host --privileged --name dnsmasq \
      ${POD} --env-file "${IRONIC_DATA_DIR}/ironic-vars.env" \
      -v "$IRONIC_DATA_DIR:/shared" --entrypoint /bin/rundnsmasq "${IRONIC_IMAGE}"
 
 # See this file for env vars you can set, like IP, DHCP_RANGE, INTERFACE
-# https://github.com/metal3-io/ironic-image/blob/main/scripts/runhttpd
+# https://github.com/goshlanguage/ironic-image/blob/main/scripts/runhttpd
 # shellcheck disable=SC2086
 sudo "${CONTAINER_RUNTIME}" run -d --net host --privileged --name httpd \
      ${POD} ${CERTS_MOUNTS} ${BASIC_AUTH_MOUNTS} ${IRONIC_HTPASSWD} \
@@ -257,7 +257,7 @@ sudo "${CONTAINER_RUNTIME}" run -d --net host --privileged --name httpd \
      -v "$IRONIC_DATA_DIR:/shared" --entrypoint /bin/runhttpd "${IRONIC_IMAGE}"
 
 if [ "$IRONIC_USE_MARIADB" = "true" ]; then
-    # https://github.com/metal3-io/mariadb-image/blob/main/runmariadb
+    # https://github.com/goshlanguage/mariadb-image/blob/main/runmariadb
     # shellcheck disable=SC2086
     sudo "${CONTAINER_RUNTIME}" run -d --net host --privileged --name mariadb \
          ${POD} ${CERTS_MOUNTS} --env-file "${IRONIC_DATA_DIR}/ironic-vars.env" \
@@ -266,7 +266,7 @@ if [ "$IRONIC_USE_MARIADB" = "true" ]; then
 fi
 
 # See this file for additional env vars you may want to pass, like IP and INTERFACE
-# https://github.com/metal3-io/ironic-image/blob/main/scripts/runironic
+# https://github.com/goshlanguage/ironic-image/blob/main/scripts/runironic
 # shellcheck disable=SC2086
 sudo "${CONTAINER_RUNTIME}" run -d --net host --privileged --name ironic \
      ${POD} ${CERTS_MOUNTS} ${BASIC_AUTH_MOUNTS} ${IRONIC_HTPASSWD} \

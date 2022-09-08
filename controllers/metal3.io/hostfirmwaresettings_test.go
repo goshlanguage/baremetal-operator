@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	metal3v1alpha1 "github.com/metal3-io/baremetal-operator/apis/metal3.io/v1alpha1"
-	"github.com/metal3-io/baremetal-operator/pkg/provisioner"
+	metal3v1alpha1 "github.com/goshlanguage/baremetal-operator/apis/metal3.io/v1alpha1"
+	"github.com/goshlanguage/baremetal-operator/pkg/provisioner"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/intstr"

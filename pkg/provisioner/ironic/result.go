@@ -3,7 +3,7 @@ package ironic
 import (
 	"time"
 
-	"github.com/metal3-io/baremetal-operator/pkg/provisioner"
+	"github.com/goshlanguage/baremetal-operator/pkg/provisioner"
 )
 
 func retryAfterDelay(delay time.Duration) (provisioner.Result, error) {

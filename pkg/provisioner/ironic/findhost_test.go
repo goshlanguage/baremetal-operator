@@ -5,9 +5,9 @@ import (
 
 	"github.com/gophercloud/gophercloud/openstack/baremetal/v1/nodes"
 
-	"github.com/metal3-io/baremetal-operator/pkg/hardwareutils/bmc"
-	"github.com/metal3-io/baremetal-operator/pkg/provisioner/ironic/clients"
-	"github.com/metal3-io/baremetal-operator/pkg/provisioner/ironic/testserver"
+	"github.com/goshlanguage/baremetal-operator/pkg/hardwareutils/bmc"
+	"github.com/goshlanguage/baremetal-operator/pkg/provisioner/ironic/clients"
+	"github.com/goshlanguage/baremetal-operator/pkg/provisioner/ironic/testserver"
 )
 
 func TestFindExistingHost(t *testing.T) {

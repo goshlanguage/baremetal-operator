@@ -29,15 +29,15 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	metal3iov1alpha1 "github.com/metal3-io/baremetal-operator/apis/metal3.io/v1alpha1"
-	metal3iocontroller "github.com/metal3-io/baremetal-operator/controllers/metal3.io"
-	"github.com/metal3-io/baremetal-operator/pkg/imageprovider"
-	"github.com/metal3-io/baremetal-operator/pkg/provisioner"
-	"github.com/metal3-io/baremetal-operator/pkg/provisioner/demo"
-	"github.com/metal3-io/baremetal-operator/pkg/provisioner/fixture"
-	"github.com/metal3-io/baremetal-operator/pkg/provisioner/ironic"
-	"github.com/metal3-io/baremetal-operator/pkg/secretutils"
-	"github.com/metal3-io/baremetal-operator/pkg/version"
+	metal3iov1alpha1 "github.com/goshlanguage/baremetal-operator/apis/metal3.io/v1alpha1"
+	metal3iocontroller "github.com/goshlanguage/baremetal-operator/controllers/metal3.io"
+	"github.com/goshlanguage/baremetal-operator/pkg/imageprovider"
+	"github.com/goshlanguage/baremetal-operator/pkg/provisioner"
+	"github.com/goshlanguage/baremetal-operator/pkg/provisioner/demo"
+	"github.com/goshlanguage/baremetal-operator/pkg/provisioner/fixture"
+	"github.com/goshlanguage/baremetal-operator/pkg/provisioner/ironic"
+	"github.com/goshlanguage/baremetal-operator/pkg/secretutils"
+	"github.com/goshlanguage/baremetal-operator/pkg/version"
 	// +kubebuilder:scaffold:imports
 )
 

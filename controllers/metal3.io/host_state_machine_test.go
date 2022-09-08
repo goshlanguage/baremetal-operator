@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	metal3v1alpha1 "github.com/metal3-io/baremetal-operator/apis/metal3.io/v1alpha1"
+	metal3v1alpha1 "github.com/goshlanguage/baremetal-operator/apis/metal3.io/v1alpha1"
 
 	promutil "github.com/prometheus/client_golang/prometheus/testutil"
 	"github.com/stretchr/testify/assert"
@@ -14,10 +14,10 @@ import (
 	fakeclient "sigs.k8s.io/controller-runtime/pkg/client/fake"
 	logf "sigs.k8s.io/controller-runtime/pkg/log"
 
-	"github.com/metal3-io/baremetal-operator/apis/metal3.io/v1alpha1"
-	"github.com/metal3-io/baremetal-operator/pkg/hardware"
-	"github.com/metal3-io/baremetal-operator/pkg/hardwareutils/bmc"
-	"github.com/metal3-io/baremetal-operator/pkg/provisioner"
+	"github.com/goshlanguage/baremetal-operator/apis/metal3.io/v1alpha1"
+	"github.com/goshlanguage/baremetal-operator/pkg/hardware"
+	"github.com/goshlanguage/baremetal-operator/pkg/hardwareutils/bmc"
+	"github.com/goshlanguage/baremetal-operator/pkg/provisioner"
 )
 
 func testStateMachine(host *metal3v1alpha1.BareMetalHost) *hostStateMachine {
