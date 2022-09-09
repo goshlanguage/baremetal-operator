@@ -5,8 +5,8 @@ go 1.17
 require (
 	github.com/go-logr/logr v1.2.0
 	github.com/gophercloud/gophercloud v0.22.0
-	github.com/goshlanguage/baremetal-operator/apis v1.1.3
-	github.com/goshlanguage/baremetal-operator/pkg/hardwareutils v1.1.3
+	github.com/goshlanguage/baremetal-operator/apis v1.1.4
+	github.com/goshlanguage/baremetal-operator/pkg/hardwareutils v1.1.4
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.11.0
 	github.com/stretchr/testify v1.7.0

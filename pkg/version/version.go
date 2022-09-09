@@ -10,7 +10,7 @@ var (
 	Raw = "was not built with version info"
 
 	// String is the human-friendly representation of the version.
-	String = fmt.Sprintf("metal3-io/baremetal-operator %s", Raw)
+	String = fmt.Sprintf("goshlanguage/baremetal-operator %s", Raw)
 
 	// Commit is the commit hash from which the software was built.
 	// Set via LDFLAGS in Makefile.
